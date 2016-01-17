@@ -4,6 +4,16 @@ An automatic/bunch update program for packages with scm \_service files on [open
 
 Now you can update many packages at once on your local machine.
 
+Basically, this script will:
+
+* delete old tarball
+* clean specfile
+* run the service to get the new tarball
+* add the new tarball
+* push to OBS
+
+for every package
+
 ## System Requirement
 
 * ruby
